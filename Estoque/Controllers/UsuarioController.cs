@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Estoque.Domain.Entidades;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Estoque.Controllers
 {
@@ -11,7 +12,12 @@ namespace Estoque.Controllers
 
         public IActionResult Cadastro()
         {
-            return View();
+            var model = new Usuario();
+
+            model.Nome = "Andre Sombra";
+            model.Senha = "123";
+
+            return View(model);
         }
     }
 }
