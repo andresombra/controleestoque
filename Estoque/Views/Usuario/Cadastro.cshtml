@@ -1,7 +1,24 @@
-﻿
+﻿@using Estoque.Domain.Entidades;
+@model Usuario
 @{
     ViewData["Title"] = "Cadastro de Usuario";
 }
 
 <h1>Cadastro de Usuário</h1>
+<div class="row">
+    <form class="form-control">
 
+        <div class="mb-1 row">
+            <label class="col-sm-1 col-form-label">Nome</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" asp-for="Nome">
+            </div>
+        </div>
+        <div class="mb-1 row">
+            <label class="col-sm-1 col-form-label">Senha</label>
+            <div class="col-sm-3">
+                <input type="password" class="form-control" asp-for="Senha">
+            </div>
+        </div>
+    </form>
+</div>
