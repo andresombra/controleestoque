@@ -14,7 +14,7 @@ namespace Estoque.Controllers
         {
             var model = new Usuario();
 
-            model.Nome = "Andre Sombra";
+            model.Nome = "Andre Luiz Sombra";
             model.Senha = "123";
 
             return View(model);
